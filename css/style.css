@@ -7,6 +7,8 @@ body{
 }
 
 header{
+	float: left
+        clear: left;
 	padding: 30 0 30 0;
 	border-bottom: 1px solid #5CB86E;
 
@@ -36,8 +38,7 @@ p{
 }
 
 a:link {
-    float: left
-    clear: left;
+
     color: white;
     text-decoration: none;
     margin-bottom: 27px;
