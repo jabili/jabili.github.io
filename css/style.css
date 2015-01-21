@@ -36,7 +36,8 @@ p{
 }
 
 a:link {
-	color: white;
+    display: block;
+    color: white;
     text-decoration: none;
     margin-bottom: 27px;
     padding: 9 12 9 12;
