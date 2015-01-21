@@ -36,6 +36,8 @@ p{
 }
 
 a:link {
+    float: left
+    clear: left;
     color: white;
     text-decoration: none;
     margin-bottom: 27px;
