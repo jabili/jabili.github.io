@@ -73,6 +73,6 @@ a:hover {
 }
 
 @media screen and (max-width:440px) {
-#container{ padding:20px; }
-#header { margin-bottom: 20px; }
+#container{ padding:15px; }
+#header { margin-bottom: 15px; }
 }
