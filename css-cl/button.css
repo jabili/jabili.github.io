@@ -1,0 +1,78 @@
+/*jabs button--------------*/
+.jab-button {
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	padding: 0 15px;
+	border: 1px solid #999;
+	text-align: center;
+	background: #C2D5F0;
+	border: 2px solid #2A62A6;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+}
+.jab-button.rounded {
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+}
+.jab-button.dropdown {
+	padding-right: 9px;
+}
+.jab-button.dropdown a {
+	background: url(arrow.png) no-repeat right;
+	padding-right: 50px;
+	font-size: .9em;
+}
+.jab-button a {
+	color: #2A62A6;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	text-decoration: none;
+	text-shadow: 0px 1px #eee;
+	font-weight: bold;
+	display: inline;
+}
+
+#furnx, #freex, #samx, #seax, #bellx, #rentx	{
+	color: white;
+	padding-left: 4px;
+}
+.jab-button:hover {
+	color: white;
+
+}
+.jab-button:active {
+
+}
+.jab-button.grey {
+	background: #DDD;
+	border: 2px solid #666;
+	
+}
+.jab-button.grey a {
+	color: #666;
+
+}
+.jab-button.grey:hover {
+
+}
+.jab-button.grey:active {
+
+}
+
+
+
+//jabs button function css
+#furnitureoff > .result	{
+	background: blue;
+}
+
+
+
+
+
+
+

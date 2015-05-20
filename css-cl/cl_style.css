@@ -1,0 +1,452 @@
+
+
+html, body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #ddd;
+	line-height: 1.4em;
+	font-size: 12px;
+}
+
+a {
+	color: #365e9f;
+	text-decoration: none;
+}
+a:hover {
+	color: #365e9f;
+	text-decoration: underline;
+}
+
+em {
+	font-weight: normal;
+	font-style: italic;
+}
+
+h1 {
+	font-family: "Rockwell", serif;
+	font-size: 3em;
+	text-transform: lowercase;
+} h1 a { color: white; } h1 a:hover { color: white; }
+h2, label {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 20px 0 10px 0;
+}
+
+.content {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+#header, #search-div, #footer {
+	padding: 20px;
+}
+
+
+
+#header {
+	color: white;
+	line-height: 50px;
+	
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+	border-bottom: 1px solid black;
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(#00418b), to(#003066)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #00418b,  #003066); /* for firefox 3.6+ */
+}
+#header h1, #header .dropdown {
+	float: left;
+}
+#header .dropdown {
+	margin: 15px 40px;
+	font-size: 1.2em;
+}
+#header ul a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+#header ul a:hover {
+	text-decoration: none;
+	background-color: #ddd;
+	color: black;
+	
+	text-shadow: none;
+	
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#header #nav {
+	float: right;
+}
+#header #nav li {
+	float: left;
+	margin: 0 5px;
+}
+
+#search-div {
+	background-color: #ddd;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #ccc;
+	
+	text-shadow: #FFF 0 1px 0;
+	color: #333;
+}
+#search-div input[type="text"] {
+	width: 350px;
+}
+#search-div .content form > a {
+	margin-left: 40px;
+}
+
+#main {
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+#main a:hover {
+	text-decoration: underline;
+}
+#main p {
+	padding: 20px 0;
+}
+.main-content {
+	width: 680px;
+	float: left;
+}
+.sidebar-left, .sidebar-right {
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+	width: 199px;
+}
+.sidebar-left {
+	float: left;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+}
+.sidebar-right {
+	float: right;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+
+#footer {
+	background-color: #ddd;
+	height: 40px;
+	font-weight: bold;
+}
+#footer p {
+	float: left;
+}
+#footer ul {
+	float: right;
+}
+#footer ul li {
+	float: left;
+	margin: 0 10px;
+}
+#footer a {
+	color: #000;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+/*main categories--*/
+#main td {
+	vertical-align: top;
+	padding-top: 20px;
+}
+h4 {
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.col {
+	width: 200px;
+}
+.col ul, .col .cats {
+	display: table-cell;
+	padding-bottom: 1em;
+}
+.col .cats ul {
+	padding-right: 20px;
+}
+.col .cats ul li a {
+	display: block;
+	padding: 2px 6px;
+}
+#main .col .cats ul li a:hover {
+	text-decoration: none;
+}
+.col .cats ul li:hover {
+	background-color: #eee;
+}
+.col {
+	margin-right: 25px;
+}
+.sidehead {
+	font-size: 1.2em;
+	font-style: italic;
+	
+		
+}
+
+/*ty's button--------------*/
+.ty-button {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 0 15px;
+	border: 1px solid #999;
+	text-align: center;
+	
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#bbb)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #ddd,  #bbb); /* for firefox 3.6+ */
+	
+	box-shadow: inset 0 1px 0px #eee;
+	-moz-box-shadow: inset 0 1px 0px #eee;
+  	-webkit-box-shadow: inset 0 1px 0px #eee;
+}
+.ty-button.rounded {
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+}
+.ty-button.dropdown {
+	padding-right: 9px;
+}
+.ty-button.dropdown a {
+	background: url(../img/arrow.png) no-repeat right;
+	padding-right: 50px;
+	font-size: .9em;
+}
+.ty-button a {
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #333;
+	text-decoration: none;
+	text-shadow: 0px 1px #eee;
+	font-weight: bold;
+}
+.ty-button:hover, .filter.first {
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #eee,  #ccc); /* for firefox 3.6+ */
+}
+.ty-button:active {
+	background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#ddd)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #bbb,  #ddd); /* for firefox 3.6+ */
+}
+.ty-button.blue {
+	background: -webkit-gradient(linear, left top, left bottom, from(#3E79CF), to(#315C9C)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #3E79CF,  #315C9C); /* for firefox 3.6+ */
+
+	box-shadow: inset 0 1px 0px rgba(255,255,255,0.4);
+	-moz-box-shadow: inset 0 1px 0px rgba(255,255,255,0.4);
+  	-webkit-box-shadow: inset 0 1px 0px rgba(255,255,255,0.6);
+}
+.ty-button.blue a {
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.ty-button.blue:hover {
+	color: #548cee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#548cee), to(#3E79CF)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #548cee,  #3E79CF); /* for firefox 3.6+ */
+}
+.ty-button.blue:active {
+	color: #548cee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#315C9C), to(#3E79CF)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #315C9C,  #3E79CF); /* for firefox 3.6+ */
+}
+
+
+/*forms----------------------*/
+label {
+	margin-right: 10px;
+	color: #333;
+}
+input[type="text"],
+textarea {
+	font-size: 1.2em;
+	background: #f9f9f9;
+	border: 1px solid #aaa;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+	padding: 5px;
+}
+
+/*locMenu------------------*/
+#shade {
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: black;
+	opacity: 0.4;
+	position: absolute;
+	display: none;
+}
+/*locMenu------------------*/
+#locChooser {
+	position: relative;
+	line-height: 2.4em;
+}
+/*#locChooser .dropdown:hover + * {
+	visibility: visible;
+}*/
+#locMenu {
+	z-index: 500;
+	position: absolute;
+	width: 860px;
+	top: 42px;
+	padding: 20px;
+	background-color: #333;
+	display: none;
+	
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-box-shadow: 1px 3px 14px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 1px 3px 14px rgba(0,0,0,0.5);
+	box-shadow: 1px 3px 14px rgba(0,0,0,0.5);
+}
+/*#locMenu:hover {
+	visibility: visible;
+}*/
+#locMenu h3 {
+	float: left;
+	padding: 0 8px;
+	font-weight: bold;
+}
+#locMenu ul li a {
+	color: #ccc;
+}
+#state_chooser li {
+	float: left;
+	padding: 0 8px;
+	font-weight: bold;
+}
+#state_chooser li:hover, #locMenu .selected {
+	cursor: pointer;
+	background-color: #555;
+}
+#hide_division_new {
+	float: right;
+	padding: 0 8px;
+}
+.letterMenu ul {
+	padding-top: 20px;
+}
+.letterMenu ul {
+	float: left;
+	width: 200px;
+}
+.letterMenu span {
+	margin: 8px;
+	font-size: 1.6em;
+}
+.cMenu {
+	display: none;
+}
+
+/*search results-----*/
+.result {
+	border-top: 1px solid #ddd;
+	position: relative;
+	padding: 10px 0;
+}
+.result img {
+	background-color: #ddd;
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 10px;
+}
+#main .result p {
+	line-height: 12px;
+	padding: 5px;
+}
+.result h3 {
+	font-size: 1.4em;
+	margin-top: 10px;
+	color: #555;
+}
+.result h3 small a {
+	font-size: .9em;
+	color: #555;
+}
+.result .price {
+	font-size: 1.4em;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	padding: 10px;
+	background-color: #ddd;
+	text-shadow: #FFF 0 1px 0;
+	color: #333;
+}
+.result .time {
+	color: #555;
+}
+
+
+
+#sort-bar {
+	padding: 20px 0;
+}
+#sort-bar .ty-button {
+	border-radius: 0px;
+	margin: 0;
+	margin-right: -4px;
+}
+#sort-bar .ty-button a {
+	font-weight: 500;
+}
+#sort-bar .ty-button.first {
+	border-radius: 5px 0 0 5px;
+} #sort-bar .ty-button.last {
+	border-radius: 0 5px 5px 0;
+}
+
+#search-div input[type="text"].price {
+	width: 60px;
+	margin: 0 6px;
+	color: #888;
+	font-size: 12px;
+}
+
+input[type="checkbox"] {
+	margin: 0 6px 0 20px;
+}
+
+h5 {
+	display: inline;
+	margin-right: 10px;
+	font-weight: bold;
+	color: #333;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+

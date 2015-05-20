@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample page</title>
+	<link rel="stylesheet" href="css-cl/yui-reset-min-2.8.1.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css-cl/cl_style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css-cl/cl_style_sanfran.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cl_script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="header"><div class="content">
+		<h1>Craigslist</h1>
+		<div id="shade"></div>
+		<div id="locChooser">
+			<div class="ty-button dropdown"><a href="">san francisco bay area</a></div>
+			<div id="locMenu">
+				<div class="clearfix" id="state_nav">
+	                <h3 class="search">Browse U.S. by State:</h3>
+	                <ul id="state_chooser">
+	                  <li id="state_A">A</li>
+	                  <li id="state_C">C</li>
+	                  <li id="state_D">D</li>
+	                  <li id="state_F">F</li>
+	                  <li id="state_G">G</li>
+	                  <li id="state_H">H</li>
+	                  <li id="state_I">I</li>
+	                  <li id="state_K">K</li>
+	                  <li id="state_L">L</li>
+	                  <li id="state_M">M</li>
+	                  <li id="state_N">N</li>
+	                  <li id="state_O">O</li>
+	                  <li id="state_P">P</li>
+	                  <li id="state_R">R</li>
+	                  <li id="state_S">S</li>
+	                  <li id="state_T">T</li>
+	                  <li id="state_U">U</li>
+	                  <li id="state_V">V</li>
+	                  <li id="state_W">W</li>
+	                  <li id="state_Canada">Canada</li>
+	                  <li id="state_Country">Other Countries</li>
+	                </ul>
+	                <span class="hide division"><a href="javascript:void(0)" id="hide_division_new">x hide</a></span>
+	            </div>
+				<div id="cMenu" class="cMenu letterMenu">
+					<ul><li><span>California</span></li>
+					<li><a href="http://bakersfield.craigslist.org">bakersfield</a></li>
+					<li><a href="http://chico.craigslist.org">chico</a></li>
+					<li><a href="http://fresno.craigslist.org">fresno / madera</a></li>
+					<li><a href="http://goldcountry.craigslist.org">gold country</a></li>
+					<li><a href="http://hanford.craigslist.org">hanford-corcoran</a></li>
+					<li><a href="http://humboldt.craigslist.org">humboldt county</a></li>
+					<li><a href="http://imperial.craigslist.org">imperial county</a></li>
+					<li><a href="http://inlandempire.craigslist.org">inland empire</a></li>
+					<li><a href="http://losangeles.craigslist.org">los angeles</a></li>
+					<li><a href="http://mendocino.craigslist.org">mendocino county</a></li>
+					<li><a href="http://merced.craigslist.org">merced</a></li>
+					<li><a href="http://modesto.craigslist.org">modesto</a></li>
+					<li><a href="http://monterey.craigslist.org">monterey bay</a></li>
+					<li><a href="http://orangecounty.craigslist.org">orange county</a></li>
+					</ul>
+					<ul><li><span><br /></span></li>
+					<li><a href="http://palmsprings.craigslist.org">palm springs</a></li>
+					<li><a href="http://redding.craigslist.org">redding</a></li>
+					<li><a href="http://sacramento.craigslist.org">sacramento</a></li>
+					<li><a href="http://sandiego.craigslist.org">san diego</a></li>
+					<li><a class="selected" href="http://sfbay.craigslist.org">san francisco bay area</a></li>
+					<li><a href="http://slo.craigslist.org">san luis obispo</a></li>
+					<li><a href="http://santabarbara.craigslist.org">santa barbara</a></li>
+					<li><a href="http://santamaria.craigslist.org">santa maria</a></li>
+					<li><a href="http://siskiyou.craigslist.org">siskiyou county</a></li>
+					<li><a href="http://stockton.craigslist.org">stockton</a></li>
+					<li><a href="http://susanville.craigslist.org">susanville</a></li>
+					<li><a href="http://ventura.craigslist.org">ventura county</a></li>
+					<li><a href="http://visalia.craigslist.org">visalia-tulare</a></li>
+					<li><a href="http://yubasutter.craigslist.org">yuba-sutter</a></li>
+					</ul>
+					<ul><li><span>Colorado</span></li>
+					<li><a href="http://boulder.craigslist.org">boulder</a></li>
+					<li><a href="http://cosprings.craigslist.org">colorado springs</a></li>
+					<li><a href="http://denver.craigslist.org">denver</a></li>
+					<li><a href="http://eastco.craigslist.org">eastern CO</a></li>
+					<li><a href="http://fortcollins.craigslist.org">fort collins / north CO</a></li>
+					<li><a href="http://rockies.craigslist.org">high rockies</a></li>
+					<li><a href="http://pueblo.craigslist.org">pueblo</a></li>
+					<li><a href="http://westslope.craigslist.org">western slope</a></li>
+					</ul>
+					<ul><li><span>Connecticut</span></li>
+					<li><a href="http://newlondon.craigslist.org">eastern CT</a></li>
+					<li><a href="http://hartford.craigslist.org">hartford</a></li>
+					<li><a href="http://newhaven.craigslist.org">new haven</a></li>
+					<li><a href="http://nwct.craigslist.org">northwest CT</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div id="wMenu" class="wMenu letterMenu">
+					<ul><li><span>Washington</span></li>
+					<li><a href="http://bellingham.craigslist.org">bellingham</a></li>
+					<li><a href="http://kpr.craigslist.org">kennewick-pasco-richland</a></li>
+					<li><a href="http://moseslake.craigslist.org">moses lake</a></li>
+					<li><a href="http://olympic.craigslist.org">olympic peninsula</a></li>
+					<li><a href="http://pullman.craigslist.org">pullman / moscow</a></li>
+					<li><a href="seatac.html">seattle-tacoma</a></li>
+					<li><a href="http://skagit.craigslist.org">skagit / island / SJI</a></li>
+					<li><a href="http://spokane.craigslist.org">spokane / coeur d'alene</a></li>
+					<li><a href="http://wenatchee.craigslist.org">wenatchee</a></li>
+					<li><a href="http://yakima.craigslist.org">yakima</a></li>
+					</ul>
+					<ul><li><span>West Virginia</span></li>
+					<li><a href="http://charlestonwv.craigslist.org">charleston </a></li>
+					<li><a href="http://martinsburg.craigslist.org">eastern panhandle</a></li>
+					<li><a href="http://huntington.craigslist.org">huntington-ashland</a></li>
+					<li><a href="http://morgantown.craigslist.org">morgantown</a></li>
+					<li><a href="http://wheeling.craigslist.org">northern panhandle</a></li>
+					<li><a href="http://parkersburg.craigslist.org">parkersburg-marietta</a></li>
+					<li><a href="http://swv.craigslist.org">southern WV</a></li>
+					<li><a href="http://wv.craigslist.org">west virginia (old)</a></li>
+					</ul>
+					<ul><li><span>Wisconson</span></li>
+					<li><a href="http://appleton.craigslist.org">appleton-oshkosh-FDL</a></li>
+					<li><a href="http://eauclaire.craigslist.org">eau claire</a></li>
+					<li><a href="http://greenbay.craigslist.org">green bay</a></li>
+					<li><a href="http://janesville.craigslist.org">janesville</a></li>
+					<li><a href="http://racine.craigslist.org">kenosha-racine</a></li>
+					<li><a href="http://lacrosse.craigslist.org">la crosse</a></li>
+					<li><a href="http://madison.craigslist.org">madison</a></li>
+					<li><a href="http://milwaukee.craigslist.org">milwaukee</a></li>
+					<li><a href="http://northernwi.craigslist.org">northern WI</a></li>
+					<li><a href="http://sheboygan.craigslist.org">sheboygan</a></li>
+					<li><a href="http://wausau.craigslist.org">wausau</a></li>
+					</ul>
+					<ul><li><span>Wyoming</span></li>
+					<li><a href="http://wyoming.craigslist.org">wyoming</a></li></ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<ul id="nav">
+			<li><a href="post-1-create.html">Post to Classifieds</a></li>
+			<li><a href="">My Craigslist</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div></div>
+	
+	<div id="search-div"><div class="content">
+		<form><label>search</label><input type="text" /><div class="ty-button dropdown"><a href="">all categories</a></div><div class="ty-button blue"><a href="">SEARCH</a></div><a href="">advanced search &#187;</a></form>
+	</div></div>
+	
+	<div id="main"><div class="content">
+		
+		
+		<div class="main-content">
+			<h2>browse</h2>
+			<!-- =================== -->
+			<!-- = Main Categories = -->
+			<!-- =================== -->
+			<table summary="main" id="main">
+				<tbody>
+					<tr>
+						<td>
+							<div id="ccc" class="col">
+								<h4 class="ban"><a href="ccc/">community</a></h4>
+								<div class="cats">
+									<ul id="ccc0">
+										<li><a href="act/">activities</a></li>
+										<li><a href="ats/">artists</a></li>
+										<li><a href="kid/">childcare</a></li>
+										<li><a href="com/">general</a></li>
+										<li><a href="grp/">groups</a></li>
+										<li><a href="pet/">pets</a></li>
+										<li><a href="cal/">events</a></li>
+									</ul>
+									<ul id="ccc1">
+										<li><a href="laf/">lost+found</a></li>
+										<li><a href="muc/">musicians</a></li>
+										<li><a href="vnn/">local&nbsp;news</a></li>
+										<li><a href="pol/">politics</a></li>
+										<li><a href="rid/">rideshare</a></li>
+										<li><a href="vol/">volunteers</a></li>
+										<li><a href="cal/#classes">classes</a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="ppp" class="col">
+								<h4 class="ban">personals</h4>
+								<div class="cats">
+									<ul id="ppp0">
+										<li><a href="/cgi-bin/personals.cgi?category=stp">strictly platonic</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=w4w">women seek women</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=w4m">women seeking men</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=m4w">men seeking women</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=m4m">men seeking men</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=msr">misc romance</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=cas">casual encounters</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=mis">missed connections</a></li>
+										<li><a href="/cgi-bin/personals.cgi?category=rnr">rants and raves</a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="forums" class="col">
+								<h4 class="ban"><a href="/forums/">discussion forums</a></h4>
+								<div class="cats">
+									<ul id="forums0">
+										<li><a href="/forums/?forumID=89">1099</a></li>
+										<li><a href="/forums/?forumID=3232">apple</a></li>
+										<li><a href="/forums/?forumID=49">arts</a></li>
+										<li><a href="/forums/?forumID=78">atheist</a></li>
+										<li><a href="/forums/?forumID=5">autos</a></li>
+										<li><a href="/forums/?forumID=88">beauty</a></li>
+										<li><a href="/forums/?forumID=95">bikes</a></li>
+										<li><a href="/forums/?forumID=47">celebs</a></li>
+										<li><a href="/forums/?forumID=34">comp</a></li>
+										<li><a href="/forums/?forumID=83">crafts</a></li>
+										<li><a href="/forums/?forumID=122">diet</a></li>
+										<li><a href="/forums/?forumID=76">divorce</a></li>
+										<li><a href="/forums/?forumID=130">dying</a></li>
+										<li><a href="/forums/?forumID=99">eco</a></li>
+										<li><a href="/forums/?forumID=90">educ</a></li>
+										<li><a href="/forums/?forumID=79">etiquet</a></li>
+										<li><a href="/forums/?forumID=8">feedbk</a></li>
+										<li><a href="/forums/?forumID=41">film</a></li>
+										<li><a href="/forums/?forumID=92">fitness</a></li>
+										<li><a href="/forums/?forumID=64">fixit</a></li>
+										<li><a href="/forums/?forumID=22">food</a></li>
+										<li><a href="/forums/?forumID=2007">frugal</a></li>
+										<li><a href="/forums/?forumID=85">gaming</a></li>
+										<li><a href="/forums/?forumID=54">garden</a></li>
+									</ul>
+									<ul id="forums1">
+										<li><a href="/forums/?forumID=1204">gifts</a></li>
+										<li><a href="/forums/?forumID=575">haiku</a></li>
+										<li><a href="/forums/?forumID=43">health</a></li>
+										<li><a href="/forums/?forumID=9">help</a></li>
+										<li><a href="/forums/?forumID=81">history</a></li>
+										<li><a href="/forums/?forumID=6">housing</a></li>
+										<li><a href="/forums/?forumID=7">jobs</a></li>
+										<li><a href="/forums/?forumID=1257">jokes</a></li>
+										<li><a href="/forums/?forumID=200269">kink</a></li>
+										<li><a href="/forums/?forumID=1926">l.t.r.</a></li>
+										<li><a href="/forums/?forumID=73">legal</a></li>
+										<li><a href="/forums/?forumID=1991">linux</a></li>
+										<li><a href="/forums/?forumID=48">loc pol</a></li>
+										<li><a href="/forums/?forumID=72">m4m</a></li>
+										<li><a href="/forums/?forumID=53">money</a></li>
+										<li><a href="/forums/?forumID=1947">motocy</a></li>
+										<li><a href="/forums/?forumID=24">music</a></li>
+										<li><a href="/forums/?forumID=501">npo</a></li>
+										<li><a href="/forums/?forumID=4">open</a></li>
+										<li><a href="/forums/?forumID=16">outdoor</a></li>
+										<li><a href="/forums/?forumID=50">over 50</a></li>
+										<li><a href="/forums/?forumID=84">p.o.c.</a></li>
+										<li><a href="/forums/?forumID=39">parent</a></li>
+										<li><a href="/forums/?forumID=19">pefo</a></li>
+									</ul>
+									<ul id="forums2">
+										<li><a href="/forums/?forumID=26">pets</a></li>
+										<li><a href="/forums/?forumID=71">philos</a></li>
+										<li><a href="/forums/?forumID=20">politic</a></li>
+										<li><a href="/forums/?forumID=29">psych</a></li>
+										<li><a href="/forums/?forumID=46">queer</a></li>
+										<li><a href="/forums/?forumID=12">recover</a></li>
+										<li><a href="/forums/?forumID=59">religion</a></li>
+										<li><a href="/forums/?forumID=28">rofo</a></li>
+										<li><a href="/forums/?forumID=96">science</a></li>
+										<li><a href="/forums/?forumID=91">shop</a></li>
+										<li><a href="/forums/?forumID=93">spirit</a></li>
+										<li><a href="/forums/?forumID=32">sports</a></li>
+										<li><a href="/forums/?forumID=98">t.v.</a></li>
+										<li><a href="/forums/?forumID=1040">tax</a></li>
+										<li><a href="/forums/?forumID=21">testing</a></li>
+										<li><a href="/forums/?forumID=97">transg</a></li>
+										<li><a href="/forums/?forumID=42">travel</a></li>
+										<li><a href="/forums/?forumID=2400">vegan</a></li>
+										<li><a href="/forums/?forumID=69">w4w</a></li>
+										<li><a href="/forums/?forumID=15">wed</a></li>
+										<li><a href="/forums/?forumID=120">wine</a></li>
+										<li><a href="/forums/?forumID=94">women</a></li>
+										<li><a href="/forums/?forumID=7000">words</a></li>
+										<li><a href="/forums/?forumID=27">writers</a></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div id="hhh" class="col">
+								<h4 class="ban"><a href="hhh/">housing</a></h4>
+								<div class="cats">
+									<ul id="hhh0">
+										<li><a href="apa/">apts / housing</a></li>
+										<li><a href="roo/">rooms / shared</a></li>
+										<li><a href="sub/">sublets / temporary</a></li>
+										<li><a href="hsw/">housing wanted</a></li>
+										<li><a href="swp/">housing swap</a></li>
+										<li><a href="vac/">vacation rentals</a></li>
+										<li><a href="prk/">parking / storage</a></li>
+										<li><a href="off/">office / commercial</a></li>
+										<li><a href="rea/">real estate for sale</a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="sss" class="col">
+								<h4 class="ban"><a href="sss/">for sale</a></h4>
+								<div class="cats">
+									<ul id="sss0">
+										<li><a href="app/">appliances</a></li>
+										<li><a href="atq/">antiques</a></li>
+										<li><a href="bar/">barter</a></li>
+										<li><a href="bik/">bikes</a></li>
+										<li><a href="boa/">boats</a></li>
+										<li><a href="bks/">books</a></li>
+										<li><a href="bfs/">business</a></li>
+										<li><a href="sys/">computer</a></li>
+										<li><a href="zip/">free</a></li>
+										<li><a href="fua/">furniture</a></li>
+										<li><a href="for/">general</a></li>
+										<li><a href="jwl/">jewelry</a></li>
+										<li><a href="mat/">materials</a></li>
+										<li><a href="rvs/">rvs</a></li>
+										<li><a href="spo/">sporting</a></li>
+										<li><a href="tia/">tickets</a></li>
+										<li><a href="tls/">tools</a></li>
+										<li><a href="wan/">wanted</a></li>
+									</ul>
+									<ul id="sss1">
+										<li><a href="art/">arts+crafts</a></li>
+										<li><a href="pts/">auto parts</a></li>
+										<li><a href="bab/">baby+kids</a></li>
+										<li><a href="hab/">beauty+hlth</a></li>
+										<li><a href="/cgi-bin/autos.cgi?&amp;category=cta/">cars+trucks</a></li>
+										<li><a href="emd/">cds/dvd/vhs</a></li>
+										<li><a href="mob/">cell phones</a></li>
+										<li><a href="clo/">clothes+acc</a></li>
+										<li><a href="clt/">collectibles</a></li>
+										<li><a href="ele/">electronics</a></li>
+										<li><a href="grd/">farm+garden</a></li>
+										<li><a href="gms/">garage sale</a></li>
+										<li><a href="hsh/">household</a></li>
+										<li><a href="mca/">motorcycles</a></li>
+										<li><a href="msg/">music instr</a></li>
+										<li><a href="pho/">photo+video</a></li>
+										<li><a href="tag/">toys+games</a></li>
+										<li><a href="vgm/">video gaming</a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="bbb" class="col">
+								<h4 class="ban"><a href="bbb/">services</a></h4>
+								<div class="cats">
+									<ul id="bbb0">
+										<li><a href="bts/">beauty</a></li>
+										<li><a href="crs/">creative</a></li>
+										<li><a href="cps/">computer</a></li>
+										<li><a href="cys/">cycle</a></li>
+										<li><a href="evs/">event</a></li>
+										<li><a href="fns/">financial</a></li>
+										<li><a href="lgs/">legal</a></li>
+										<li><a href="lss/">lessons</a></li>
+										<li><a href="mas/">marine</a></li>
+										<li><a href="pas/">pet</a></li>
+									</ul>
+									<ul id="bbb1">
+										<li><a href="aos/">automotive</a></li>
+										<li><a href="fgs/">farm+garden</a></li>
+										<li><a href="hss/">household</a></li>
+										<li><a href="lbs/">labor/move</a></li>
+										<li><a href="sks/">skill'd trade</a></li>
+										<li><a href="rts/">real estate</a></li>
+										<li><a href="biz/">sm biz ads</a></li>
+										<li><a href="thp/">therapeutic</a></li>
+										<li><a href="trv/">travel/vac</a></li>
+										<li><a href="wet/">write/ed/tr8</a></li>
+									</ul>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div id="jjj" class="col">
+								<h4 class="ban"><a href="jjj/">jobs</a></h4>
+								<div class="cats">
+									<ul id="jjj0">
+										<li><a href="acc/">accounting+finance</a></li>
+										<li><a href="ofc/">admin / office</a></li>
+										<li><a href="egr/">arch / engineering</a></li>
+										<li><a href="med/">art / media / design</a></li>
+										<li><a href="sci/">biotech / science</a></li>
+										<li><a href="bus/">business / mgmt</a></li>
+										<li><a href="csr/">customer service</a></li>
+										<li><a href="edu/">education</a></li>
+										<li><a href="fbh/">food / bev / hosp</a></li>
+										<li><a href="lab/">general labor</a></li>
+										<li><a href="gov/">government</a></li>
+										<li><a href="hum/">human resources</a></li>
+										<li><a href="eng/">internet engineers</a></li>
+										<li><a href="lgl/">legal / paralegal</a></li>
+										<li><a href="mnu/">manufacturing</a></li>
+										<li><a href="mar/">marketing / pr / ad</a></li>
+										<li><a href="hea/">medical / health</a></li>
+										<li><a href="npo/">nonprofit sector</a></li>
+										<li><a href="rej/">real estate</a></li>
+										<li><a href="ret/">retail / wholesale</a></li>
+										<li><a href="sls/">sales / biz dev</a></li>
+										<li><a href="spa/">salon / spa / fitness</a></li>
+										<li><a href="sec/">security</a></li>
+										<li><a href="trd/">skilled trade / craft</a></li>
+										<li><a href="sof/">software / qa / dba</a></li>
+										<li><a href="sad/">systems / network</a></li>
+										<li><a href="tch/">technical support</a></li>
+										<li><a href="trp/">transport</a></li>
+										<li><a href="tfr/">tv / film / video</a></li>
+										<li><a href="web/">web / info design</a></li>
+										<li><a href="wri/">writing / editing</a></li>
+										<li><a href="etc/">[ETC]</a></li>
+										<li><a href="/search/jjj?addFour=part-time">[ part-time ]</a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="ggg" class="col">
+								<h4 class="ban"><a href="ggg/">gigs</a></h4>
+								<div class="cats">
+									<ul id="ggg0">
+										<li><a href="cwg/">crew</a></li>
+										<li><a href="evg/">event</a></li>
+										<li><a href="lbg/">labor</a></li>
+										<li><a href="tlg/">talent</a></li>
+									</ul>
+									<ul id="ggg1">
+										<li><a href="cpg/">computer</a></li>
+										<li><a href="crg/">creative</a></li>
+										<li><a href="dmg/">domestic</a></li>
+										<li><a href="wrg/">writing</a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="res" class="col">
+								<h4 class="ban"><a href="res/">resumes</a></h4>
+								<div class="cats"></div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- ================== -->
+			<!-- = End categories = -->
+			<!-- ================== -->
+		</div>
+		<div class="sidebar-right">
+			<h2>sidebar</h2>
+			<p>sidebar content!</p>
+		</div>
+		<div class="clear"></div>
+	</div></div><!-- #main -->
+	
+	<div id="footer"><div class="content">
+		<p>&copy;Josh Jabili Ty</p>
+		<ul>
+			<li><a href="">terms of use</a></li>
+			<li><a href="">privacy</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">help</a></li>
+		</ul>
+	</div></div>
+	
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample page</title>
+	<link rel="stylesheet" href="css-cl/yui-reset-min-2.8.1.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="css-cl/cl_style1.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#furniture').hide();
+			$("select").change(function () {
+				$('#furniture').show();
+			});
+
+			$("a[href=''], tbody ul li a").click(function(event){
+				event.preventDefault();
+			});
+			$("#state_W").click(function(event){
+				$("#cMenu").fadeOut('fast', function() {
+					$("#wMenu").fadeIn('fast');
+				});
+			});
+			$("#state_C").click(function(event){
+				$("#wMenu").fadeOut('fast', function() {
+					$("#cMenu").fadeIn('fast');
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="header"><div class="content">
+		<h1><a href="seatac.html">craigslist</a></h1>
+		<div id="locChooser">
+			<div class="ty-button dropdown"><a href="">seattle-tacoma</a></div>
+			<div id="locMenu">
+				<div class="clearfix" id="state_nav">
+	                <h3 class="search">Browse U.S. by State:</h3>
+	                <ul id="state_chooser">
+	                  <li id="state_A">A</li>
+	                  <li id="state_C">C</li>
+	                  <li id="state_D">D</li>
+	                  <li id="state_F">F</li>
+	                  <li id="state_G">G</li>
+	                  <li id="state_H">H</li>
+	                  <li id="state_I">I</li>
+	                  <li id="state_K">K</li>
+	                  <li id="state_L">L</li>
+	                  <li id="state_M">M</li>
+	                  <li id="state_N">N</li>
+	                  <li id="state_O">O</li>
+	                  <li id="state_P">P</li>
+	                  <li id="state_R">R</li>
+	                  <li id="state_S">S</li>
+	                  <li id="state_T">T</li>
+	                  <li id="state_U">U</li>
+	                  <li id="state_V">V</li>
+	                  <li id="state_W">W</li>
+	                  <li id="state_Canada">Canada</li>
+	                  <li id="state_Country">Other Countries</li>
+	                </ul>
+	                <span class="hide division"><a href="javascript:void(0)" id="hide_division_new">x hide</a></span>
+	            </div>
+				<div id="cMenu" class="cMenu letterMenu">
+					<ul><li><span>California</span></li>
+					<li><a href="http://bakersfield.craigslist.org">bakersfield</a></li>
+					<li><a href="http://chico.craigslist.org">chico</a></li>
+					<li><a href="http://fresno.craigslist.org">fresno / madera</a></li>
+					<li><a href="http://goldcountry.craigslist.org">gold country</a></li>
+					<li><a href="http://hanford.craigslist.org">hanford-corcoran</a></li>
+					<li><a href="http://humboldt.craigslist.org">humboldt county</a></li>
+					<li><a href="http://imperial.craigslist.org">imperial county</a></li>
+					<li><a href="http://inlandempire.craigslist.org">inland empire</a></li>
+					<li><a href="http://losangeles.craigslist.org">los angeles</a></li>
+					<li><a href="http://mendocino.craigslist.org">mendocino county</a></li>
+					<li><a href="http://merced.craigslist.org">merced</a></li>
+					<li><a href="http://modesto.craigslist.org">modesto</a></li>
+					<li><a href="http://monterey.craigslist.org">monterey bay</a></li>
+					<li><a href="http://orangecounty.craigslist.org">orange county</a></li>
+					</ul>
+					<ul><li><span><br /></span></li>
+					<li><a href="http://palmsprings.craigslist.org">palm springs</a></li>
+					<li><a href="http://redding.craigslist.org">redding</a></li>
+					<li><a href="http://sacramento.craigslist.org">sacramento</a></li>
+					<li><a href="http://sandiego.craigslist.org">san diego</a></li>
+					<li><a class="selected" href="http://sfbay.craigslist.org">san francisco bay area</a></li>
+					<li><a href="http://slo.craigslist.org">san luis obispo</a></li>
+					<li><a href="http://santabarbara.craigslist.org">santa barbara</a></li>
+					<li><a href="http://santamaria.craigslist.org">santa maria</a></li>
+					<li><a href="http://siskiyou.craigslist.org">siskiyou county</a></li>
+					<li><a href="http://stockton.craigslist.org">stockton</a></li>
+					<li><a href="http://susanville.craigslist.org">susanville</a></li>
+					<li><a href="http://ventura.craigslist.org">ventura county</a></li>
+					<li><a href="http://visalia.craigslist.org">visalia-tulare</a></li>
+					<li><a href="http://yubasutter.craigslist.org">yuba-sutter</a></li>
+					</ul>
+					<ul><li><span>Colorado</span></li>
+					<li><a href="http://boulder.craigslist.org">boulder</a></li>
+					<li><a href="http://cosprings.craigslist.org">colorado springs</a></li>
+					<li><a href="http://denver.craigslist.org">denver</a></li>
+					<li><a href="http://eastco.craigslist.org">eastern CO</a></li>
+					<li><a href="http://fortcollins.craigslist.org">fort collins / north CO</a></li>
+					<li><a href="http://rockies.craigslist.org">high rockies</a></li>
+					<li><a href="http://pueblo.craigslist.org">pueblo</a></li>
+					<li><a href="http://westslope.craigslist.org">western slope</a></li>
+					</ul>
+					<ul><li><span>Connecticut</span></li>
+					<li><a href="http://newlondon.craigslist.org">eastern CT</a></li>
+					<li><a href="http://hartford.craigslist.org">hartford</a></li>
+					<li><a href="http://newhaven.craigslist.org">new haven</a></li>
+					<li><a href="http://nwct.craigslist.org">northwest CT</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div id="wMenu" class="wMenu letterMenu">
+					<ul><li><span>Washington</span></li>
+					<li><a href="http://bellingham.craigslist.org">bellingham</a></li>
+					<li><a href="http://kpr.craigslist.org">kennewick-pasco-richland</a></li>
+					<li><a href="http://moseslake.craigslist.org">moses lake</a></li>
+					<li><a href="http://olympic.craigslist.org">olympic peninsula</a></li>
+					<li><a href="http://pullman.craigslist.org">pullman / moscow</a></li>
+					<li><a href="http://seattle.craigslist.org">seattle-tacoma</a></li>
+					<li><a href="http://skagit.craigslist.org">skagit / island / SJI</a></li>
+					<li><a href="http://spokane.craigslist.org">spokane / coeur d'alene</a></li>
+					<li><a href="http://wenatchee.craigslist.org">wenatchee</a></li>
+					<li><a href="http://yakima.craigslist.org">yakima</a></li>
+					</ul>
+					<ul><li><span>West Virginia</span></li>
+					<li><a href="http://charlestonwv.craigslist.org">charleston </a></li>
+					<li><a href="http://martinsburg.craigslist.org">eastern panhandle</a></li>
+					<li><a href="http://huntington.craigslist.org">huntington-ashland</a></li>
+					<li><a href="http://morgantown.craigslist.org">morgantown</a></li>
+					<li><a href="http://wheeling.craigslist.org">northern panhandle</a></li>
+					<li><a href="http://parkersburg.craigslist.org">parkersburg-marietta</a></li>
+					<li><a href="http://swv.craigslist.org">southern WV</a></li>
+					<li><a href="http://wv.craigslist.org">west virginia (old)</a></li>
+					</ul>
+					<ul><li><span>Wisconson</span></li>
+					<li><a href="http://appleton.craigslist.org">appleton-oshkosh-FDL</a></li>
+					<li><a href="http://eauclaire.craigslist.org">eau claire</a></li>
+					<li><a href="http://greenbay.craigslist.org">green bay</a></li>
+					<li><a href="http://janesville.craigslist.org">janesville</a></li>
+					<li><a href="http://racine.craigslist.org">kenosha-racine</a></li>
+					<li><a href="http://lacrosse.craigslist.org">la crosse</a></li>
+					<li><a href="http://madison.craigslist.org">madison</a></li>
+					<li><a href="http://milwaukee.craigslist.org">milwaukee</a></li>
+					<li><a href="http://northernwi.craigslist.org">northern WI</a></li>
+					<li><a href="http://sheboygan.craigslist.org">sheboygan</a></li>
+					<li><a href="http://wausau.craigslist.org">wausau</a></li>
+					</ul>
+					<ul><li><span>Wyoming</span></li>
+					<li><a href="http://wyoming.craigslist.org">wyoming</a></li></ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<ul id="nav">
+			<li><a href="post-1-create.html">Post to Classifieds</a></li>
+			<li><a href="">My Craigslist</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div></div>
+	
+	<div id="search-div"><div class="content">
+		<form action="search-results.html"><label>search</label><input type="text" /><div class="ty-button dropdown"><a href="">all categories</a></div><div class="ty-button blue"><a href="">SEARCH</a></div><a href="">advanced search &#187;</a></form>
+	</div></div>
+	
+	<div id="main"><div class="content">
+		
+		
+		<div class="main-content">
+			<h2>Confirmation</h2>
+			<p>Please check your e-mail to publish, edit, or delete your new post.</p>
+			<p>Would like to start posting instantly without e-mail confirmation? <a href="">Create a Craigslist Account</a>.</p> 	
+
+		</div>
+		<div class="sidebar-right">
+			<h2>sidebar</h2>
+			<p>sidebar content!</p>
+		</div>
+		<div class="clear"></div>
+	</div></div><!-- #main -->
+	
+	<div id="footer"><div class="content">
+		<p>&copy;Josh Jabili Ty</p>
+		<ul>
+			<li><a href="">terms of use</a></li>
+			<li><a href="">privacy</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">help</a></li>
+		</ul>
+	</div></div>
+	
+</body>
+</html>

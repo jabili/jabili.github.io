@@ -1,0 +1,156 @@
+
+#choosetype, #chooseloc, #choosecat {
+	float: left;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+#main {
+	padding-bottom: 20px;
+}
+
+#main select {
+	background: #f9f9f9;
+	border: 1px solid #aaa;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+	padding: 5px;
+	font-size: 1.2em;
+	color: #323232;
+	min-width: 200px;
+}
+
+.pform label {
+	font-size: 14px;
+	display: block;
+	padding-top: 10px;
+}
+
+#main h3 {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+#main p.note {
+	color: #999;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+#form1 select {
+	margin-bottom: 20px;
+}
+
+#form2 {
+	clear: both;
+}
+
+#imgupload {
+	float: left;
+	margin: 10px 0;
+	margin-right: 40px;
+}
+
+#imgupload>div {
+	padding: 5px;
+	border: 1px solid #ccc;
+	float: right;
+	clear: both;
+	margin: 5px 0;
+}
+#imgupload>div:hover {
+	border-color: #00418b;
+}
+#imgupload div div {
+	width: 67px;
+	height: 50px;
+	background: url(../img/add_photo.png) no-repeat -59px -60px;
+}
+#imgupload div div#bigimg {
+	width: 144px;
+	height: 108px;
+	background: url(../img/add_photo.png) no-repeat -5px -267px;
+}
+#imgupload div input {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+#imgupload div a {
+	float: right;
+	padding: 2px 2px 0 2px;
+}
+
+
+.textInputActive {
+	color: #888;
+}
+
+#main input[type="text"], textarea {
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.pform li:nth-child(1) {
+	float: left;
+}
+.pform li:nth-child(2) {
+	
+}
+.pform li:nth-child(3) {
+	margin-bottom: 5px;
+}
+.pform span {
+	font-size: 1.4em;
+	margin-right: 4px;
+}
+
+#specs {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 25px 20px 0 20px;
+	position: relative;
+}
+
+#specs label {
+	background-color: white;
+	padding: 0 5px;
+	position: absolute;
+	top: -10px;
+}
+#specs input[type="text"] {
+	margin: 0;
+}
+#specs img[src="img/plus_icon.jpeg"] {
+	position: relative;
+	top: 7px;
+	margin: 0 5px 0 15px;
+}
+#desc input[type="text"], #desc textarea {
+	width: 96%;
+}
+
+
+
+
+
+
+#imgupload div div.no-img, #imgupload div div#bigimg.no-img {
+	background-image: none;
+	background-color: #ddd;
+}
+#imgupload div div.car-img, #imgupload div div#bigimg.car-img {
+	background: url(../img/car.jpg) no-repeat 0 0;
+}
+
+
+
+
+
+
+
+
+

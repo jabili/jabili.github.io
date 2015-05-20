@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample page</title>
+	<link rel="stylesheet" href="css-cl/yui-reset-min-2.8.1.css" type="text/css" media="screen" input[type='text']"no title" charset="utf-8">
+	<link rel="stylesheet" href="css-cl/cl_style.css" type="text/css" media="screen" input[type='text']"no title" charset="utf-8">
+	<link rel="stylesheet" href="css-cl/cl_style_post.css" type="text/css" media="screen" input[type='text']"no title" charset="utf-8">
+	<script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#chooseloc, #choosecat, #form2').hide();
+			$("#choosetype").change(function() {
+				$("#chooseloc").fadeIn();
+			});	$("#chooseloc").change(function() {
+					$("#choosecat").fadeIn();
+				}); $("#choosecat").change(function() {
+						$("#form2").animate({height:'toggle'},'fast');
+					});
+			
+			$("a[href=''], tbody ul li a").click(function(event){
+				event.preventDefault();
+			});
+			
+			$("input[type='text']").focus(function(srcc) {
+		        if ($(this).val() == $(this)[0].title)
+		        {
+		            $(this).removeClass("textInputActive");
+		            $(this).val("");
+		        }
+		    });
+		    $("input[type='text']").blur(function() {
+		        if ($(this).val() == "")
+		        {
+		            $(this).addClass("textInputActive");
+		            $(this).val($(this)[0].title);
+		        }
+		    });
+			$("input[type='text']").blur();
+			
+			$('.smlimg, #imgupload div a').hide();
+			$('input[type=file]').change(function() {
+				// var str = $(this).val();
+				// var stra = str.replace("C:\\fakepath\\", "\/Users\/Ty\/Dropbox\/HCDE 437\/FINAL WEBSITE\/img\/");
+				// var strb = String(stra);
+				$(this).parent().parent().find('a').show();
+				$(this).parent().addClass('no-img');
+				
+				$("#bigimg").addClass('car-img');
+				
+				// $(this).parent().css("background-image", "url(" + "img\/car.jpg" + ")");
+				$(this).parent().parent().next().show();
+			});
+			$('#imgupload a').click(function() {
+				$(this).siblings().removeClass('no-img car-img');
+				$(this).parent().next().hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="header"><div class="content">
+		<h1><a href="seatac.html">craigslist</a></h1>
+		<div id="locChooser">
+			<div class="ty-button dropdown"><a href="">seattle-tacoma</a></div>
+			<div id="locMenu">
+				<div class="clearfix" id="state_nav">
+	                <h3 class="search">Browse U.S. by State:</h3>
+	                <ul id="state_chooser">
+	                  <li id="state_A">A</li>
+	                  <li id="state_C">C</li>
+	                  <li id="state_D">D</li>
+	                  <li id="state_F">F</li>
+	                  <li id="state_G">G</li>
+	                  <li id="state_H">H</li>
+	                  <li id="state_I">I</li>
+	                  <li id="state_K">K</li>
+	                  <li id="state_L">L</li>
+	                  <li id="state_M">M</li>
+	                  <li id="state_N">N</li>
+	                  <li id="state_O">O</li>
+	                  <li id="state_P">P</li>
+	                  <li id="state_R">R</li>
+	                  <li id="state_S">S</li>
+	                  <li id="state_T">T</li>
+	                  <li id="state_U">U</li>
+	                  <li id="state_V">V</li>
+	                  <li id="state_W">W</li>
+	                  <li id="state_Canada">Canada</li>
+	                  <li id="state_Country">Other Countries</li>
+	                </ul>
+	                <span class="hide division"><a href="javascript:void(0)" id="hide_division_new">x hide</a></span>
+	            </div>
+				<div id="cMenu" class="cMenu letterMenu">
+					<ul><li><span>California</span></li>
+					<li><a href="http://bakersfield.craigslist.org">bakersfield</a></li>
+					<li><a href="http://chico.craigslist.org">chico</a></li>
+					<li><a href="http://fresno.craigslist.org">fresno / madera</a></li>
+					<li><a href="http://goldcountry.craigslist.org">gold country</a></li>
+					<li><a href="http://hanford.craigslist.org">hanford-corcoran</a></li>
+					<li><a href="http://humboldt.craigslist.org">humboldt county</a></li>
+					<li><a href="http://imperial.craigslist.org">imperial county</a></li>
+					<li><a href="http://inlandempire.craigslist.org">inland empire</a></li>
+					<li><a href="http://losangeles.craigslist.org">los angeles</a></li>
+					<li><a href="http://mendocino.craigslist.org">mendocino county</a></li>
+					<li><a href="http://merced.craigslist.org">merced</a></li>
+					<li><a href="http://modesto.craigslist.org">modesto</a></li>
+					<li><a href="http://monterey.craigslist.org">monterey bay</a></li>
+					<li><a href="http://orangecounty.craigslist.org">orange county</a></li>
+					</ul>
+					<ul><li><span><br /></span></li>
+					<li><a href="http://palmsprings.craigslist.org">palm springs</a></li>
+					<li><a href="http://redding.craigslist.org">redding</a></li>
+					<li><a href="http://sacramento.craigslist.org">sacramento</a></li>
+					<li><a href="http://sandiego.craigslist.org">san diego</a></li>
+					<li><a class="selected" href="http://sfbay.craigslist.org">san francisco bay area</a></li>
+					<li><a href="http://slo.craigslist.org">san luis obispo</a></li>
+					<li><a href="http://santabarbara.craigslist.org">santa barbara</a></li>
+					<li><a href="http://santamaria.craigslist.org">santa maria</a></li>
+					<li><a href="http://siskiyou.craigslist.org">siskiyou county</a></li>
+					<li><a href="http://stockton.craigslist.org">stockton</a></li>
+					<li><a href="http://susanville.craigslist.org">susanville</a></li>
+					<li><a href="http://ventura.craigslist.org">ventura county</a></li>
+					<li><a href="http://visalia.craigslist.org">visalia-tulare</a></li>
+					<li><a href="http://yubasutter.craigslist.org">yuba-sutter</a></li>
+					</ul>
+					<ul><li><span>Colorado</span></li>
+					<li><a href="http://boulder.craigslist.org">boulder</a></li>
+					<li><a href="http://cosprings.craigslist.org">colorado springs</a></li>
+					<li><a href="http://denver.craigslist.org">denver</a></li>
+					<li><a href="http://eastco.craigslist.org">eastern CO</a></li>
+					<li><a href="http://fortcollins.craigslist.org">fort collins / north CO</a></li>
+					<li><a href="http://rockies.craigslist.org">high rockies</a></li>
+					<li><a href="http://pueblo.craigslist.org">pueblo</a></li>
+					<li><a href="http://westslope.craigslist.org">western slope</a></li>
+					</ul>
+					<ul><li><span>Connecticut</span></li>
+					<li><a href="http://newlondon.craigslist.org">eastern CT</a></li>
+					<li><a href="http://hartford.craigslist.org">hartford</a></li>
+					<li><a href="http://newhaven.craigslist.org">new haven</a></li>
+					<li><a href="http://nwct.craigslist.org">northwest CT</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div id="wMenu" class="wMenu letterMenu">
+					<ul><li><span>Washington</span></li>
+					<li><a href="http://bellingham.craigslist.org">bellingham</a></li>
+					<li><a href="http://kpr.craigslist.org">kennewick-pasco-richland</a></li>
+					<li><a href="http://moseslake.craigslist.org">moses lake</a></li>
+					<li><a href="http://olympic.craigslist.org">olympic peninsula</a></li>
+					<li><a href="http://pullman.craigslist.org">pullman / moscow</a></li>
+					<li><a href="http://seattle.craigslist.org">seattle-tacoma</a></li>
+					<li><a href="http://skagit.craigslist.org">skagit / island / SJI</a></li>
+					<li><a href="http://spokane.craigslist.org">spokane / coeur d'alene</a></li>
+					<li><a href="http://wenatchee.craigslist.org">wenatchee</a></li>
+					<li><a href="http://yakima.craigslist.org">yakima</a></li>
+					</ul>
+					<ul><li><span>West Virginia</span></li>
+					<li><a href="http://charlestonwv.craigslist.org">charleston </a></li>
+					<li><a href="http://martinsburg.craigslist.org">eastern panhandle</a></li>
+					<li><a href="http://huntington.craigslist.org">huntington-ashland</a></li>
+					<li><a href="http://morgantown.craigslist.org">morgantown</a></li>
+					<li><a href="http://wheeling.craigslist.org">northern panhandle</a></li>
+					<li><a href="http://parkersburg.craigslist.org">parkersburg-marietta</a></li>
+					<li><a href="http://swv.craigslist.org">southern WV</a></li>
+					<li><a href="http://wv.craigslist.org">west virginia (old)</a></li>
+					</ul>
+					<ul><li><span>Wisconson</span></li>
+					<li><a href="http://appleton.craigslist.org">appleton-oshkosh-FDL</a></li>
+					<li><a href="http://eauclaire.craigslist.org">eau claire</a></li>
+					<li><a href="http://greenbay.craigslist.org">green bay</a></li>
+					<li><a href="http://janesville.craigslist.org">janesville</a></li>
+					<li><a href="http://racine.craigslist.org">kenosha-racine</a></li>
+					<li><a href="http://lacrosse.craigslist.org">la crosse</a></li>
+					<li><a href="http://madison.craigslist.org">madison</a></li>
+					<li><a href="http://milwaukee.craigslist.org">milwaukee</a></li>
+					<li><a href="http://northernwi.craigslist.org">northern WI</a></li>
+					<li><a href="http://sheboygan.craigslist.org">sheboygan</a></li>
+					<li><a href="http://wausau.craigslist.org">wausau</a></li>
+					</ul>
+					<ul><li><span>Wyoming</span></li>
+					<li><a href="http://wyoming.craigslist.org">wyoming</a></li></ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<ul id="nav">
+			<li><a href="post-1-create.html">Post to Classifieds</a></li>
+			<li><a href="">My Craigslist</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div></div>
+	
+	<div id="search-div"><div class="content">
+		<form action="search-results.html"><label>search</label><input type="text" /><div class="ty-button dropdown"><a href="">all categories</a></div><div class="ty-button blue"><a href="">SEARCH</a></div><a href="">advanced search &#187;</a></form>
+	</div></div>
+	
+	<div id="main"><div class="content">
+			<h2>create a post</h2>
+			
+			<div id="form1">
+				<div id="choosetype">
+					<h3>Type of Posting</h3>
+					<p class="note">Read the <a href="">terms</a></p>
+					<select size="12">
+						<option>job offered </option>
+						<option>resume / job wanted</option>
+						<option>housing offered</option>
+						<option>housing wanted</option>
+						<option>for sale</option>
+						<option>item wanted</option>
+						<option>gig offered</option>
+						<option>service offered</option>
+						<option>personal / romance</option>
+						<option>community</option>
+						<option>event</option>
+					</select>
+				</div>
+				
+				<div id="chooseloc">
+					<h3>Item Location</h3>
+					<p class="note">Select all that apply</p>
+					<select size="12" multiple="yes">
+						<option>seattle</option>
+						<option>eastside</option>
+						<option>snohomish county</option>
+						<option>kitsap / west puget</option>
+						<option>tacoma / pierce</option>
+						<option>olympia / thurston</option>
+						<option>south king co</option>
+					</select>
+				</div>
+				
+				<div id="choosecat">
+					<h3>Category</h3>
+					<p class="note">Please limit your post to one category</p>
+					<select size="12">
+						<option>antiques</option>
+						<option>appliances</option>
+						<option>arts &amp; crafts</option>
+						<option>auto parts</option>
+						<option>baby &amp; kid stuff</option>
+						<option>barter</option>
+						<option>bicycles</option>
+						<option>boats</option>
+						<option>books &amp; magazines</option>
+						<option>business/commercial</option>
+						<option>cars &amp; trucks - by dealer</option>
+						<option>cars &amp; trucks - by owner</option>
+						<option>cds / dvds / vhs (no pornography please)</option>
+						<option>cell phones</option>
+						<option>clothing &amp; accessories</option>
+						<option>collectibles</option>
+						<option>computers &amp; tech</option>
+						<option>electronics</option>
+						<option>farm &amp; garden (legal sales of agricultural livestock OK)</option>
+						<option>free stuff</option>
+						<option>furniture - by dealer</option>
+						<option>furniture - by owner</option>
+						<option>garage &amp; moving sales</option>
+						<option>general for sale</option>
+						<option>health and beauty</option>
+						<option>household items</option>
+						<option>items wanted</option>
+						<option>jewelry</option>
+						<option>materials</option>
+						<option>motorcycles/scooters - by dealer</option>
+						<option>motorcycles/scooters - by owner</option>
+						<option>musical instruments</option>
+						<option>photo/video</option>
+						<option>recreational vehicles</option>
+						<option>sporting goods (no firearms or weapons please)</option>
+						<option>tickets - by dealer</option>
+						<option>tickets - by owner</option>
+						<option>tools</option>
+						<option>toys &amp; games</option>
+						<option>video gaming</option>
+					</select>
+				</div>
+			</div>
+			
+			<div id="form2">
+				<form action="upload_file.php" method="post" enctype="multipart/form-data">						
+				<fieldset id="imgupload">
+					<h3>Add Photos</h3>
+					<div><div id="bigimg"><input type="file" name="file" id="file"></div><a href="">x</a></div>
+					<div class="smlimg"><div><input type="file" name="file" id="file"></div><a href="">x</a></div>
+					<div class="smlimg"><div><input type="file" name="file" id="file"></div><a href="">x</a></div>
+					<div class="smlimg"><div><input type="file" name="file" id="file"></div><a href="">x</a></div>
+				</fieldset>
+				<fieldset>
+					<ul class="pform">
+						<li><label>Title:</label><input type="text" name="name" size="60"></li>
+						<li><label>Price:</label> <span>$</span><input type="text" name="age" maxlength="20">
+							<input type="checkbox" value="OBO"> or Best Offer (OBO)</li>
+						<li><label>Your Email:</label><input type="text" name="age" size="52" title="so that buyers can contact you" maxlength="20"><input type="text" name="age" size="52" title="type your email again to confirm" maxlength="20"><br />
+							<input type="radio" name="group1" value="anon" checked> anonymize (your email will show as: sale-xxxxxxxx@craigslist.org) <sup><a href="">[?]</a></sup>
+							<input type="radio" name="group1" value="hide"> Hide</li>
+						<li id="specs">
+							<label>Item Details</label>
+							Title:
+								<select>
+									<option value="volvo">select a condition</option>
+									<option value="saab">Clean</option>
+									<option value="mercedes">Salvage</option>
+									<option value="mercedes">Rebuilt</option>
+								</select>
+							Mileage: <input type="text">
+							<a href=""><img src="img/plus_icon.jpeg">Add detail</a>
+						</li>	
+						<li id="desc"><label>Description:</label><input type="text" title="why are you selling it?"><textarea rows="12"></textarea></li>
+					</ul>
+					<div class="ty-button blue" id="ppbuttons"><a href="post-2-preview.html">Preview</a></div>
+				</fieldset>
+				</form>
+			</div>	
+	</div></div><!-- #main -->
+	
+	<div id="footer"><div class="content">
+		<p>&copy;Josh Jabili Ty</p>
+		<ul>
+			<li><a href="">terms of use</a></li>
+			<li><a href="">privacy</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">help</a></li>
+		</ul>
+	</div></div>
+	
+</body>
+</html>
